@@ -2,7 +2,7 @@ const render = (root) => {
   root.empty();
   const wrapper = $('<div class="wrapper"></div>');
 //  wrapper.text(data.results[0].gender);
-  wrapper.text(state.datos[0].gender)
+  wrapper.text(state.name)
   root.append(wrapper);
 }
 

@@ -1,6 +1,9 @@
 $background-color-capitan-ejercicio: hsl(38deg, 78%, 64.3%);
 $background-color-divs-footer: hsl(210deg, 1.6%, 24.7%);
 $font-main-color: hsl(0°,0%,100%);
+$padding-h1: 20px;
+$margin-li: 5px;
+$main-font: Helvetica;
 /*$width12: percentage(12/12);
 $width3: percentage(3/12);*/
 $col12: 12/12*100%;
@@ -8,7 +11,7 @@ $col3: 3/12*100%;
 $col6: 6/12*100%;
 @mixin background-and-text-color {
   font: {
-    family: Helvetica;
+    family: $main-font;
   }
   background-color: $background-color-divs-footer;
   color: $font-main-color;
@@ -18,26 +21,30 @@ $col6: 6/12*100%;
 #title{
   background-color: $background-color-capitan-ejercicio;
   width: $col12;
+  padding: $padding-h1;
 }
 
 #title{
   h1{
     color: $font-main-color;
+    font-family: $main-font;
   }
 }
 
 div{
   ul{
     li{
-      background-color: $background-color-divs-footer;
-      color: $font-main-color;
+    @include background-and-text-color;
       width: $col3;
+      padding: $padding-h1 - 8px;
+      margin: $margin-li;
     }
   }
 }
 
 .ejercicio{
   width: $col6;
+  font-family: $main-font;
 }
 
 .aside{
@@ -49,5 +56,4 @@ div{
 
 .footer{
   @include background-and-text-color;
-
 }
