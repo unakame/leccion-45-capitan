@@ -1,0 +1,23 @@
+$background-color-capitan-ejercicio: hsl(38deg, 78%, 64.3%);
+$background-color-divs-footer: hsl(210deg, 1.6%, 24.7%);
+$font-main-color: hsl(0°,0%,100%);
+
+
+#title{
+  background-color: $background-color-capitan-ejercicio;
+}
+
+#title{
+  h1{
+    color: $font-main-color;
+  }
+}
+
+div{
+  ul{
+    li{
+      background-color: $background-color-divs-footer;
+      color: $font-main-color;
+    }
+  }
+}
