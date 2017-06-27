@@ -1,10 +1,25 @@
 #title {
-  background-color: #ebb75d; }
+  background-color: #ebb75d;
+  width: 100%; }
 
 #title h1 {
   color: white; }
 
 div ul li {
+  background-color: #3e3f40;
+  color: white;
+  width: 25%; }
+
+.aside {
+  font-family: Helvetica;
+  font-size: 10px;
+  background-color: #3e3f40;
+  color: white;
+  width: 25%; }
+
+.footer {
+  font-family: Helvetica;
+  font-size: 10px;
   background-color: #3e3f40;
   color: white; }
 
